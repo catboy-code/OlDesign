@@ -213,7 +213,7 @@ nav ul li a {
   padding-top: 2rem;
 }
 
-nav ul li a:hover {
+a:hover {
   text-decoration: none;
 }
 
