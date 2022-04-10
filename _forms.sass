@@ -1,0 +1,51 @@
+table
+  width: 100%
+  border-spacing: 0px
+th
+  text-align: left
+  border-bottom: 1px solid
+
+input, select, button, textarea 
+  background-color: $bg-secondary
+  font-family: inherit
+  font-size: inherit
+  margin-right: 0.4rem
+  margin-bottom: 0.4rem
+  padding: 0.5rem
+  border: none
+  border-radius: 2px
+  transition-duration: 0.2s
+  &:disabled
+    cursor: not-allowed
+    opacity: .69
+  &:focus
+    outline: 1px solid $fg-primary
+
+input:not([type='checkbox']):not([type='radio']), select, textarea, legend
+  display: block
+
+button, input[type='submit'], input[type='button']
+  transition-duration: 0.1s
+  box-shadow: $box-shadow-smol
+  padding-right: 30px
+  padding-left: 30px
+  &:hover
+    transition-duration: 0.1s
+    box-shadow: $box-shadow
+    background: $bg-secondary-hover
+
+input[type='file']::file-selector-button
+  transition-duration: 0.1s
+  margin-right: 0.4rem
+  box-shadow: $box-shadow-smol
+  padding: 10px
+  border-color: #00000000
+  border-radius: 2px
+  &:hover
+    box-shadow: $box-shadow
+    background: $bg-primary-hover
+    outline: none
+
+fieldset
+  border: 1px solid $fg-secondary
+  border-radius: 4px
