@@ -21,7 +21,7 @@ input, select, button, textarea
   &:focus
     outline: 1px solid $fg-primary
 
-input:not([type='checkbox']):not([type='radio']), select, textarea
+input:not([type='checkbox']):not([type='radio']), select, textarea, legend
   display: block
 
 button, input[type='submit'], input[type='button']
@@ -32,7 +32,19 @@ button, input[type='submit'], input[type='button']
   &:hover
     transition-duration: 0.1s
     box-shadow: $box-shadow
-    background: $bg-hover
+    background: $bg-secondary-hover
+
+input[type='file']::file-selector-button
+  transition-duration: 0.1s
+  margin-right: 0.4rem
+  box-shadow: $box-shadow-smol
+  padding: 10px
+  border-color: #00000000
+  border-radius: 2px
+  &:hover
+    box-shadow: $box-shadow
+    background: $bg-primary-hover
+    outline: none
 
 fieldset
   border: 1px solid $fg-secondary
