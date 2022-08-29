@@ -16,7 +16,7 @@ this can be broken into three categories:
 
 Just add this to your html file: 
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/code-spam/OlDesign/main/design.min.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/catboy-code/OlDesign/main/design.min.css">
 ```
 
 or simply download `design.min.css` to use manually in your project.
